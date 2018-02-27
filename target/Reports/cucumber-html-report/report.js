@@ -84,7 +84,7 @@ formatter.step({
 });
 formatter.step({
   "line": 24,
-  "name": "User should be able to perform search",
+  "name": "User type a \u003cname\u003e to perform a search",
   "keyword": "And "
 });
 formatter.step({
@@ -98,7 +98,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.examples({
-  "line": 28,
+  "line": 29,
   "name": "",
   "description": "",
   "id": "facebook-post-to-a-friend-feature;single-login-with-valid-credentials;",
@@ -106,25 +106,28 @@ formatter.examples({
     {
       "cells": [
         "username",
-        "password"
+        "password",
+        "name"
       ],
-      "line": 30,
+      "line": 31,
       "id": "facebook-post-to-a-friend-feature;single-login-with-valid-credentials;;1"
     },
     {
       "cells": [
         "sofy.aviles@gmail.com",
-        "Toffys963."
+        "Toffys963.",
+        "Randhal Ramirez"
       ],
-      "line": 31,
+      "line": 32,
       "id": "facebook-post-to-a-friend-feature;single-login-with-valid-credentials;;2"
     },
     {
       "cells": [
         "sofy.aviles@hotmail.com",
-        "sofy963."
+        "sofy963.",
+        "Sophie Aviles"
       ],
-      "line": 32,
+      "line": 33,
       "id": "facebook-post-to-a-friend-feature;single-login-with-valid-credentials;;3"
     }
   ],
@@ -146,11 +149,11 @@ formatter.match({
   "location": "SmoteTest.i_have_a_valid_set_of_data_and_access_to_registration_page()"
 });
 formatter.result({
-  "duration": 5567096473,
+  "duration": 5437506848,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 31,
+  "line": 32,
   "name": "Single login with valid credentials",
   "description": "",
   "id": "facebook-post-to-a-friend-feature;single-login-with-valid-credentials;;2",
@@ -179,7 +182,10 @@ formatter.step({
 });
 formatter.step({
   "line": 24,
-  "name": "User should be able to perform search",
+  "name": "User type a Randhal Ramirez to perform a search",
+  "matchedColumns": [
+    2
+  ],
   "keyword": "And "
 });
 formatter.step({
@@ -206,35 +212,41 @@ formatter.match({
   "location": "SmoteTest.I_enter_valid_username_and_valid_password(String,String)"
 });
 formatter.result({
-  "duration": 491344483,
+  "duration": 481956958,
   "status": "passed"
 });
 formatter.match({
   "location": "SmoteTest.userShouldBeAbleToLoginSucessfully()"
 });
 formatter.result({
-  "duration": 6212567055,
+  "duration": 5400660958,
   "status": "passed"
 });
 formatter.match({
-  "location": "SmoteTest.userShouldBeAbleToPerformSearch()"
+  "arguments": [
+    {
+      "val": "Randhal Ramirez",
+      "offset": 12
+    }
+  ],
+  "location": "SmoteTest.userTypeANameToPerformASearch(String)"
 });
 formatter.result({
-  "duration": 4076564703,
+  "duration": 4000067925,
   "status": "passed"
 });
 formatter.match({
   "location": "SmoteTest.userShouldBeAbleToSelectProfile()"
 });
 formatter.result({
-  "duration": 3540439063,
+  "duration": 4466176444,
   "status": "passed"
 });
 formatter.match({
   "location": "SmoteTest.userShouldBeAbleToPostOnProfileWall()"
 });
 formatter.result({
-  "duration": 6168301992,
+  "duration": 6188747679,
   "status": "passed"
 });
 formatter.background({
@@ -253,11 +265,11 @@ formatter.match({
   "location": "SmoteTest.i_have_a_valid_set_of_data_and_access_to_registration_page()"
 });
 formatter.result({
-  "duration": 4614871120,
+  "duration": 4710570644,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 32,
+  "line": 33,
   "name": "Single login with valid credentials",
   "description": "",
   "id": "facebook-post-to-a-friend-feature;single-login-with-valid-credentials;;3",
@@ -286,7 +298,10 @@ formatter.step({
 });
 formatter.step({
   "line": 24,
-  "name": "User should be able to perform search",
+  "name": "User type a Sophie Aviles to perform a search",
+  "matchedColumns": [
+    2
+  ],
   "keyword": "And "
 });
 formatter.step({
@@ -313,36 +328,29 @@ formatter.match({
   "location": "SmoteTest.I_enter_valid_username_and_valid_password(String,String)"
 });
 formatter.result({
-  "duration": 479924169,
+  "duration": 533205060,
   "status": "passed"
 });
 formatter.match({
   "location": "SmoteTest.userShouldBeAbleToLoginSucessfully()"
 });
 formatter.result({
-  "duration": 4990469305,
+  "duration": 5266425207,
   "status": "passed"
 });
 formatter.match({
-  "location": "SmoteTest.userShouldBeAbleToPerformSearch()"
+  "arguments": [
+    {
+      "val": "Sophie Aviles",
+      "offset": 12
+    }
+  ],
+  "location": "SmoteTest.userTypeANameToPerformASearch(String)"
 });
 formatter.result({
-  "duration": 3937483531,
+  "duration": 3898476255,
   "status": "passed"
 });
 formatter.match({
   "location": "SmoteTest.userShouldBeAbleToSelectProfile()"
-});
-formatter.result({
-  "duration": 3534361291,
-  "status": "passed"
-});
-formatter.match({
-  "location": "SmoteTest.userShouldBeAbleToPostOnProfileWall()"
-});
-formatter.result({
-  "duration": 30061796257,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[contains(@class,\u0027_1mf _1mj\u0027)]\"}\n  (Session info: chrome\u003d64.0.3282.186)\n  (Driver info: chromedriver\u003d2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform\u003dWindows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.9.1\u0027, revision: \u002763f7b50\u0027, time: \u00272018-02-07T22:25:02.294Z\u0027\nSystem info: host: \u0027SALSERC35\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_121\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.33.506120 (e3e53437346286..., userDataDir: C:\\Users\\SOFIA~1.AVI\\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.186, webStorageEnabled: true}\nSession ID: 05fd6883aa21cdb283b2a8d6db2051d2\n*** Element info: {Using\u003dxpath, value\u003d//div[contains(@class,\u0027_1mf _1mj\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\r\n\tat Steps.SmoteTest.userShouldBeAbleToPostOnProfileWall(SmoteTest.java:103)\r\n\tat ✽.And User should be able to post on profile wall(Myapplication.feature:26)\r\n",
-  "status": "failed"
-});
 });
